@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git の勉強</title>
+    <link rel="stylesheet" href="git-study2.css">
 </head>
 <body>
     <h1>gh-pages ブランチはGitHub Pages に公開されます。</h1>
+    <p>この文章は master ブランチで追加されました。</p>
+
+    <h3>Git の各種コマンド</h3>
+    <dl>
+        <dt class="term">git add</dt>
+        <dd>
+            ローカルリポジトリに変更された情報を追加するつまり、変更されたワーキングツリーの一部をインデックスに追加する。</br>
+            (これをステージングという)。
+        </dd>
+
+        <dt class="term">git commit</dt>
+        <dd>
+            インデックス上に追加された変更情報にコメントをつけて( -m を付加)ローカルリポジトリに追加することができる。
+        </dd>
+
+        <dt class="term">git push</dt>
+        <dd>
+            ローカルリポジトリ上にコミット（委任追加）されたファイルをリモートリポジトリに反映させることができる。
+        </dd>
+
+        <dt class="term">git branch</dt>
+        <dd>
+            git branchだけのコマンドなら、現在のブランチが何かを確認することができる。</br>
+            git branch ~　のように後ろに作りたいブランチを新たに作ることができる。
+        </dd>
+
+        <dt class="term">git merge</dt>
+        <dd>
+            master ブランチが別のブランチの変更点を取り込むさいに使うコマンド
+        </dd>
+
+        <dt class="term">git log</dt>
+        <dd>
+            現在 commit されている内容や push 可能なファイルを表示する。
+        </dd>
+    </dl>
 </body>
 </html>
